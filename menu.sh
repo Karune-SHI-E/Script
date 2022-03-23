@@ -56,14 +56,12 @@ pkg update
 printf "\033[32mINFO \033[0m 正在为您安装Git ...\n"
 pkg install git
 pkg install wget
-wget raw.githubusercontent.com/Karune-SHI-E/Script/master/menu.sh
 printf "\033[32mINFO \033[0m 正在为您安装SSH ...\n"
 pkg install openssh
 printf "\033[32mINFO \033[0m 正在为您初始化Hexo ...\n"
 npm install hexo-cli -g
 printf "\033[32mINFO \033[0m 正在为您创建blog ...\n"
 hexo init blog
-mv menu.sh /blog
 cd blog
 printf "\033[32mINFO \033[0m 正在为您安装hexo ...\n"
 npm install
