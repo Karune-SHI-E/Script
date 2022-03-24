@@ -55,7 +55,6 @@ printf "\033[32mINFO \033[0m 正在为您更新 ...\n"
 pkg update
 printf "\033[32mINFO \033[0m 正在为您安装Git ...\n"
 pkg install git
-pkg install wget
 printf "\033[32mINFO \033[0m 正在为您安装SSH ...\n"
 pkg install openssh
 printf "\033[32mINFO \033[0m 正在为您初始化Hexo ...\n"
@@ -65,6 +64,14 @@ hexo init blog
 cd blog
 printf "\033[32mINFO \033[0m 正在为您安装hexo ...\n"
 npm install
+printf "\033[32mINFO \033[0m 正在加载中...\n"
+cd 
+ls
+printf "\033[32mINFO \033[0m 正在复制blog文件夹...\n"
+cp -rf blog /sdcard
+printf "\033[32mINFO \033[0m 正在切换blog文件夹...\n"
+cd /sdcard/blog
+ls
 printf "\033[32mINFO \033[0m 请查看您当前的Hexo版本...\n"
 hexo version
 printf "\033[32mINFO \033[0m 安装完成，您可以开始您的blog之旅了！\n"
